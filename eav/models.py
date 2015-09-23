@@ -173,7 +173,7 @@ class Attribute(models.Model):
     name = models.CharField(_(u"name"), max_length=100,
                             help_text=_(u"User-friendly attribute name"))
 
-    slug = EavSlugField(_(u"slug"), max_length=50, db_index=True, unique=True
+    slug = EavSlugField(_(u"slug"), max_length=50, db_index=True, unique=True,
                           help_text=_(u"Short unique attribute label"))
 
     description = models.CharField(_(u"description"), max_length=256,
